@@ -37,7 +37,7 @@ Bike-Crank-ANSYS-Structural-Analysis/
 │   └── geometry.pmdb
 ├── ANSYS_Files/
 │   └── crank_analysis.wbpj
-├── Results/
+└── Results/
     ├── normal_stress_distribution_along_center.png
     ├── total_deformation.png
     ├── total_deformation.mp4
