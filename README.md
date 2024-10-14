@@ -18,15 +18,12 @@ The analysis is based on the **MAE 3250 Analysis of Mechanical and Aerospace Str
 - **Applied Load**: 100 lbf upward on the right hole surface
 - **Fixed Boundary**: The left three hole surfaces are fixed.
 
-![Bike Crank Model](docs/images/bike_crank.png)
 
 ## Objectives:
 - Calculate the **deformed shape** of the crank.
 - Analyze the **displacement field**.
 - Calculate the **stress distribution** across the crank.
 - Systematically verify the results.
-
-For further details on the problem setup, refer to the [problem_specification.md](docs/problem_specification.md).
 
 ---
 
@@ -37,22 +34,21 @@ Bike-Crank-ANSYS-Structural-Analysis/
 ├── README.md
 ├── .gitignore
 ├── Geometry/
-│   └── crank_geometry_file.stp
+│   └── geometry.pmdb
 ├── ANSYS_Files/
-│   └── crank_analysis.ans
+│   └── crank_analysis.wbpj
 ├── Results/
-│   ├── stress_distribution.png
-│   ├── displacement_field.png
-│   └── deformed_shape.png
-└── docs/
-    ├── problem_specification.md
-    └── images/
-        └── bike_crank.png
+    ├── normal_stress_distribution_along_center.png
+    ├── total_deformation.png
+    ├── total_deformation.mp4
+    ├── normal_stress_distribution_along_center.txt
+    └── normal_stress_at_A.png
+
 ```
 
 ### Folder Breakdown:
-- **Geometry/**: Contains the CAD model of the crank in `.stp` format.
-- **ANSYS_Files/**: Contains ANSYS setup files, such as the `.ans` or any other relevant files used in the analysis.
+- **Geometry/**: Contains the CAD model of the crank in `.pmdb` format.
+- **ANSYS_Files/**: Contains ANSYS setup files, such as the `.wbpj` or any other relevant files used in the analysis.
 - **Results/**: Contains the results generated after running the simulation, including stress distribution and displacement field images.
 - **docs/**: Includes documentation files, such as the detailed problem specification and images used in the problem overview.
 
@@ -72,13 +68,13 @@ Bike-Crank-ANSYS-Structural-Analysis/
 After running the analysis, the following results can be obtained:
 
 - **Deformed Shape**: Visualization of the crank under the applied load.
-  ![Deformed Shape](Results/deformed_shape.png)
+  ![Deformed Shape](Results/total_deformation.png)
   
 - **Stress Distribution**: The stress intensity throughout the crank.
-  ![Stress Distribution](Results/stress_distribution.png)
+  ![Stress Distribution](Results/normal_stress_at_A.png)
   
-- **Displacement Field**: The displacement experienced by the crank under load.
-  ![Displacement Field](Results/displacement_field.png)
+- **Normal Stress Distribution Along Center**: The Normal Stress Distribution Along Center on the crank under load.
+  ![Normal Stress Distribution Along Center](Results/normal_stress_distribution_along_center.png)
 
 ---
 
@@ -86,7 +82,7 @@ After running the analysis, the following results can be obtained:
 
 - **ANSYS Mechanical** (202X or later)
 - **Aluminum 6061-T6** material properties in ANSYS
-- **Geometry File**: Crank model available in `.stp` format
+- **Geometry File**: Crank model available in `.pmdb` format
 - Basic knowledge of finite element analysis (FEA) and ANSYS software
 
 ---
