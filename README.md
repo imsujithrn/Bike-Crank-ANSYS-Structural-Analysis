@@ -68,7 +68,7 @@ Bike-Crank-ANSYS-Structural-Analysis/
 After running the analysis, the following results can be obtained:
 
 - **Deformed Shape**: Visualization of the crank under the applied load.
-  ![Deformed Shape](Results/normal_stress_distribution_along_center.mp4)
+  ![Deformed Shape](Results/total_deformation.png)
   
 - **Stress Distribution**: The stress intensity throughout the crank.
   ![Stress Distribution](Results/normal_stress_at_A.png)
