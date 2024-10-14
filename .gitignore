@@ -1,0 +1,46 @@
+# Ignore all ANSYS generated files
+*.db
+*.lock
+*.err
+*.log
+*.ldhi
+*.ldbt
+*.dat
+*.rst
+*.page
+*.rth
+*.solve
+*.out
+*.dsco
+*.esav
+*.files
+*.tri
+*.gld
+
+# Ignore result files that may be recreated easily from the simulation
+*.png
+*.jpg
+*.jpeg
+*.tiff
+*.gif
+*.bmp
+*.svg
+
+# Ignore backup or autosave files
+*~
+*.bak
+*.swp
+*.tmp
+*.old
+
+# Ignore temporary system files
+.DS_Store
+Thumbs.db
+
+# Ignore any ANSYS-specific folders
+user/
+
+# Ignore Python virtual environment (if any scripts are used)
+venv/
+__pycache__/
+*.pyc
